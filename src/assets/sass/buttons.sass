@@ -1,0 +1,30 @@
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  cursor: pointer
+  width: 100%
+  height: $button-height
+  border: $button-default-border
+  border-radius: $button-border-radius
+  background: $button-default-background
+  color: $button-default-color
+  font-size: $button-default-font-size
+  line-height: $button-default-line-height
+  font-weight: $button-default-font-weight
+  letter-spacing: $button-default-letter-spacing
+  transition: opacity $transition
+  &_fill
+    background: $button-fill-background
+    color: $button-fill-color
+  &_border
+    background: 0
+  &_user
+    color: $button-user-color
+    background: $button-user-background
+    border-color: $button-user-border-color
+  &:hover,
+  &:focus,
+  &:focus-visible
+    opacity: 0.9
